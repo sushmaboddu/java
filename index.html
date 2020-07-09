@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <script>
+        function display() {
+            var empid = document.getElementById('empid').value;
+            document.getElementById('output').innerHTML = empid;
+            var empname = document.getElementById('empname').value;
+            document.getElementById('outut').innerHTML = empname;
+            var empsar = document.getElementById('empsar').value;
+            document.getElementById('output').innerHTML = empsar;
+            document.write(+empid + "<br>" + empname + "<br>" + empsar);
+        }
+    </script>
+</head>
+
+<body>
+    <h1 align="center">
+    </h1>
+    <form name="Employee" method="post" onsumbit="display()">
+        empid:<input type="text" name="empid" id="empid"></input>
+        <br/> empname:
+        <input type="text" name="empname" id="empname"></input>
+        <br/> empsar:
+        <input type="text" name="empsar" id="empsar"></input>
+        <br/>
+        <input type="submit" onclick="display()"></input>
+    </form>
+    <div id="ouput">
+    </div>
+</body>
+
+</html>>
